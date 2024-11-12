@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Project</title>
+</head>
+<body>
+    <h1>Add Project</h1>
+    <form method="post">
+        <label>Project Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label>Description:</label><br>
+        <textarea name="description" required></textarea><br><br>
+        <button type="submit">Add</button>
+    </form>
+    <a href="{{ url_for('projects') }}">Back to Projects</a>
+</body>
+</html>

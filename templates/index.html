@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the task manager!</h1>
+    <nav>
+        <a href="{{ url_for('users') }}">Users</a> |
+        <a href="{{ url_for('projects') }}">Projects</a> |
+        <a href="{{ url_for('tasks') }}">Tasks</a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Tasks</title>
+</head>
+<body>
+    <h1>Add Tasks</h1>
+    <form method="post">
+        <label>Title:</label><br>
+        <input type="text" name="title" required><br>
+        <label>Description:</label><br>
+        <textarea name="t_description" required></textarea><br>
+        <label>Project ID:</label><br>
+        <input type="number" name="project_id" required><br>
+        <label>User ID:</label><br>
+        <input type="number" name="t_user_id" required><br>
+        <label>Due Date (YYYY-MM-DD):</label><br>
+        <input type="date" name="due_date" required><br><br>
+        <button type="submit">Add</button>
+    </form>
+    <a href="{{ url_for('tasks') }}">Back to Tasks</a>
+</body>
+</html>
